@@ -7,6 +7,7 @@
 ---
 
 * [WILD token](wild-token.md)
+* [xWILD Staking](xwild-staking.md)
 
 ## Lending
 
