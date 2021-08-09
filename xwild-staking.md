@@ -14,7 +14,7 @@ Suppliers add a native token to each lending pair. Borrowers pay interest which 
 
 Accrued supply interest is sent to the Fee Recipent contract on each interaction of the suppliers with the given lending pair \(claiming, depositing, withdrawing\).
 
-Bot developers may watch large accounts and accrue them when the accumulated fees grow large enough to become profitable for the bot to distribute them to xWILD stakers.
+Bot developers may watch large accounts and accrue them when the accumulated fees grow large enough to become profitable for the bot to distribute them to xWILD stakers. This external accrual doesn't cost anything to suppliers and is actually beneficial to them since it auto-compounds their position.
 
 #### 3. Fee Recipent contract - fee conversion
 
