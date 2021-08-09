@@ -8,7 +8,7 @@ Protocol fees earned from the interest rate spread are collected in a native tok
 
 #### 1. Supply & borrow - fee generation
 
-Suppliers add a native token to each lending pair. Borrowers pay interest which is party earned by suppliers and party by the protocol. This interest, however, is not distributed in real-time and must be accrued for each supplier separately.
+Suppliers add a native token to each lending pair. Borrowers pay interest which is partly earned by suppliers and partly by the protocol. This interest, however, is not distributed in real-time and must be accrued for each supplier separately.
 
 #### 2. Accruing - fee collection
 
