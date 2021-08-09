@@ -28,3 +28,5 @@ In practice, this conversion can happen anytime from several times per day to on
 
 Fees from step 3 are used to buyback WILD and distribute it to xWILD stakers.
 
+If you're a bot developer and want to earn incentives for fee distributions, follow [these guidelines](https://github.com/WildCredit/mev-job-board/blob/main/specs/wild-credit.md).
+
