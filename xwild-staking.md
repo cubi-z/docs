@@ -12,7 +12,7 @@ Suppliers add a native token to each lending pair. Borrowers pay interest which 
 
 #### 2. Accruing - fee collection
 
-A supply interest is sent to the Fee Recipent contract on each interaction of the suppliers with the given lending pair \(claiming, depositing, withdrawing\).
+Accrued supply interest is sent to the Fee Recipent contract on each interaction of the suppliers with the given lending pair \(claiming, depositing, withdrawing\).
 
 Bot developers may watch large accounts and accrue them when the accumulated fees grow large enough to become profitable for the bot to distribute them to xWILD stakers.
 
