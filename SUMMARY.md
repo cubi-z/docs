@@ -17,6 +17,7 @@
 ## Core Concepts
 
 * [Lending Pair](core-concepts/lending-pair.md)
+* [Vaults](core-concepts/vaults.md)
 * [Market Participants](core-concepts/market-participants.md)
 * [Providing Liquidity](core-concepts/providing-liquidity.md)
 
