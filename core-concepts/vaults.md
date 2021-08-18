@@ -27,7 +27,7 @@ For example, if the total vault balance is 100 ETH, it may hold deposits in:
 
 Vaults are still in a very early stage and the rebalancing process is currently not yet fully automated.
 
-The funds may not be at the most optimal highest yielding pair 100% of the time since. This is because the gas cost of rebalancing may be much higher than the potential short-lived increase in the supplying interest rate of any given pair.
+The funds may not be at the most optimal highest yielding pair 100% of the time. This is because the gas cost of rebalancing may be much higher than the potential short-lived increase in the supplying interest rate of any given pair.
 
 As people deposit and borrow funds into each pair, the interest rate on the pair may increase or decrease dramatically from minute to minute. Rebalancing into such short-lived highest yielding pairs every few minutes would generate unreasonable gas costs. Instead, rebalancing tries to predict which pairs may have the best stable yield long-term.
 
