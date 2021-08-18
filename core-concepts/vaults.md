@@ -23,7 +23,7 @@ For example, if the total vault balance is 100 ETH, it may hold deposits in:
 
 * 10 ETH in ETH-LINK pair at 51% APR
 * 40 ETH in ETH-MKR pair at 36% APR
-* 60 ETH in ETH-COMP pair at 48% APR
+* 50 ETH in ETH-COMP pair at 48% APR
 
 Vaults are still in a very early stage and the rebalancing process is currently not yet fully automated.
 
