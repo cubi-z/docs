@@ -45,7 +45,7 @@ New deposits made into the vault are waiting in the buffer area and do yet earn 
 
 The buffer area also serves as a cheap way for LPs to withdraw their funds. Since these funds are not yet deployed to any lending pair, the vault doesn't need to withdraw them and can just send them directly to the LP.
 
-If the LP tries to withdraw an amount larger than what's in the buffer area, the vault will first need to withdraw deployed funds and then send them to the LP. This will have a much higher gas cost that's similar to the cost.
+If the LP tries to withdraw an amount larger than what's in the buffer area, the vault will first need to withdraw deployed funds and then send them to the LP. This will have a much higher gas cost.
 
 The buffer area is currently targeting to hold about 10% of the balance deposited into the vault.  Meaning that 90% of the balance will be earning fees and 10% will be idle and available for a cheap withdrawal.
 
