@@ -14,10 +14,14 @@
 * [Interest Rates](lending/interest-rates.md)
 * [Safety Ratio](lending/safety-ratio.md)
 
+## Vaults
+
+* [Overview](vaults/vaults-1.md)
+* [Current vs Projected APR](vaults/current-vs-projected-apr.md)
+
 ## Core Concepts
 
 * [Lending Pair](core-concepts/lending-pair.md)
-* [Vaults](core-concepts/vaults.md)
 * [Market Participants](core-concepts/market-participants.md)
 * [Providing Liquidity](core-concepts/providing-liquidity.md)
 

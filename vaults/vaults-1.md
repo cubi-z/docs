@@ -1,4 +1,4 @@
-# Vaults
+# Overview
 
 ### What are vaults?
 
