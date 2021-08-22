@@ -2,7 +2,9 @@
 
 In order to maintain the solvency of the protocol, borrowers are required to overcollateralize their borrowing positions.
 
-A safety ratio is calculated as USD values of \(yourDeposit amount \* collateralFactor\) / \(yourBorrow amount\).
+A safety ratio is calculated as USD values:
+
+`(yourDeposit amount * collateralFactor) / (yourBorrow amount)`
 
 Collateral factors of all tokens are currently set to 0.6.
 
