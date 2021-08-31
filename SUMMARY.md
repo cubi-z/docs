@@ -17,7 +17,7 @@
 ## Vaults
 
 * [Overview](vaults/vaults-1.md)
-* [Current vs Projected APR](vaults/current-vs-projected-apr.md)
+* [Projected APR](vaults/current-vs-projected-apr.md)
 
 ## Core Concepts
 
