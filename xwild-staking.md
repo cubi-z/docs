@@ -1,14 +1,14 @@
 # xWILD Staking
 
-WILD can be staked to earn the protocol fees. Staked WILD is called xWILD.
+WILD peut être staké afin de gagner les frais générés par le protocole. Le WILD staké se nomme xWILD.
 
-### Lifecycle of protocol fees
+### Le cycle de vie des frais générés par le protocole
 
-Protocol fees earned from the interest rate spread are collected in a native token of each lending pair. Before they can be distributed to xWILD stakers, they must first be accrued & converted to WILD.
+Les frais générés par le protocole à travers l'écart des taux d'intérêts prêteur/emprunteur sont collectés dans le token natif de chaque paire d'emprunt. Avant d'être pouvoir distribué aux stakers de xWILD, ils doivent d'abord être accumulés et convertis en WILD.
 
-#### 1. Supply & borrow - fee generation
+#### 1. Fournir de la liquidité & emprunter - la génération des frais
 
-Suppliers add a native token to each lending pair. Borrowers pay interest which is partly earned by suppliers and partly by the protocol. This interest, however, is not distributed in real-time and must be accrued for each supplier separately.
+Les fournisseurs de liquidité ajoutent un token natif à chaque paire d'emprunt. Les emprunteurs paient un intérêt qui est partiellement gagnée par les fournisseurs de liquidité, et partiellement par le protocole. Cet intérêt, cependant, n'est pas distribué en temps réel et doit être accumulé pour chaque fournisseur séparemment.
 
 #### 2. Accruing - fee collection
 
