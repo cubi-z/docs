@@ -1,4 +1,4 @@
-# Overview
+# Vue d'ensemble
 
 ### Qu'est-ce qu'un vault ?
 
