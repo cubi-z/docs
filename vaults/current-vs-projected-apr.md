@@ -1,16 +1,16 @@
-# Projected APR
+# APR projeté
 
-To understand the difference between distributed and pending yield, see the [yield earning](vaults-1.md#yield-earning) section.
+Afin de comprendre la différence entre le rendement distribué et le rendement en attente, consultez la section [yield earning](vaults-1.md#yield-earning)
 
-### Distribution APR
+### APR distribué
 
-This is the APR the vault is distributing right now.
+C'est l'APR que le vault distribue en ce moment même.
 
-This is the current yield you're getting on your deposit in the vault. This yield is based on the latest harvested amount that's currently being distributed.
+C'est l'APR actuel que vous obtenez en déposant dans le vault. Ce rendement est basé sur le dernier montant récolté étant actuellement distribué.
 
-### Projected APR
+### APR projeté
 
-This is the APR the vault is earning now but it's not yet distributed.
+C'est l'APR que le vault est en train de gagner en ce moment mais n'est pas encore distribué.
 
-This is the projected future yield that is currently being earned by the vault across all the lending pairs but has not yet been harvested or distributed.
+C'est le rendement futur qui est actuellement en train d'être gagné par le vault à travers toutes les paires de prêt, mais qui n'a pas encore été récolté ou distribué.
 
