@@ -1,12 +1,11 @@
-# Safety Ratio
+# Ratio de sécurité
 
-In order to maintain the solvency of the protocol, borrowers are required to overcollateralize their borrowing positions.
+Afin de maintenir la solvabilité du protocole, les emprunteurs doivent sur-collatéralisér leurs positions d'emprunt.
 
-A safety ratio is calculated as USD values:
+Un ratio de sécurité est calculé en USD:
 
-`(yourDeposit amount * collateralFactor) / (yourBorrow amount)`
+`(montant votreDépôt * Facteurcollatéral) / (montant votreEmprunt)`
 
-Collateral factors of all tokens are currently set to 0.6.
+Le facteur de collatéral de tous les tokens sont actuellement fixés à 0.6.
 
-When the value of their collateral becomes insufficient in relation to the amount borrowed, their account may get liquidated to pay off their debt. When this happens, a liquidation penalty is charged which is earned by the protocol & the liquidators.
-
+Quand la valeur du collatéral devient insuffisante par rapport au montant emprunté, la position peut être liquidé afin de rembourser la dette. Si cela arrive, une pénalité de liquidation est prélevée par le protocol et les liquidateurs.
