@@ -1,6 +1,6 @@
 # Overview
 
-### Que sont les vaults ?
+### Qu'est-ce qu'un vault ?
 
 Les vaults sont des tokens ERC20 transférables produisant un rendement. Ces tokens sont nommés avec le préfixe "wd-", suivi du nom de l'actif - ex: wdETH, wdDAI, etc.
 
