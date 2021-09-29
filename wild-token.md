@@ -11,8 +11,6 @@ WILD address is [0x08A75dbC7167714CeaC1a8e43a8d643A4EDd625a](https://etherscan.i
 
 Wild Credit earns protocol fees from the interest rate spread. Borrowers pay the borrowing interest which is partly earned by suppliers and partly by the WILD stakers.
 
-Staking is not yet available.
-
 
 
 WILD est le token de gouvernance de Wild Credit. Le projet n'a pas eu de pre-sale et n'a aucun investisseurs externes. WILD a une supply totale de 100M tokens, qui ne pourra jamais être augmentée.
@@ -25,6 +23,4 @@ Tokenomics:
 44.9631% de la supply est destinée à un programme d'incentivisation sur une durée d'un an.
 0.069% de la supply a été airdrop aux premiers testeurs du protocole.
 
-Wild Credit gagne les frais du protocole via l'écart entre les taux d'intérêts. Les emprunteurs paient un taux d'emprunt qui est partiellement gagnée par les fournisseurs de liquidité, et partiellement par les stakers de WILD.
-
-Le staking n'est pas encore disponible. (à reprendre)
+Wild Credit gagne les frais du protocole via l'écart entre les taux d'intérêts prêt/emprunt. Les emprunteurs paient un taux d'emprunt qui est partiellement gagnée par les fournisseurs de liquidité, et partiellement par les stakers de WILD.
