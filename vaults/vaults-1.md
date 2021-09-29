@@ -1,51 +1,49 @@
 # Overview
 
-### What are vaults?
+### Que sont les vaults ?
 
-Vaults are yield-bearing transferrable ERC20 tokens. The tokens are named with the prefix "wd-", followed by the name of the asset - e.g. wdETH, wdDAI, etc.
+Les vaults sont des tokens ERC20 transférables produisant un rendement. Ces tokens sont nommés avec le préfixe "wd-", suivi du nom de l'actif - ex: wdETH, wdDAI, etc.
 
-### Shared rebalancing costs
+### Des coûts de rééquilibrage partagés
 
-Vaults decrease the gas costs of LPs in several ways. First, it's roughly ~4x cheaper to enter a vault when compared to entering a lending pair.
+Les vaults réduisent le coût en gas de l'apport de liquidités de plusieurs façons. Premièrement, c'est à peu près 4x moins cher de rentrer dans un vault plutôt que de rentrer dans une paire de prêt.
 
-Second, the cost of the following actions is shared by all LPs of the vault and paid from the earned interest:
+Deuxièmement, le coût des actions suivantes est partagé par tous les fournisseurs de liquidité du vault et payé par l'intérêt gagné:
+* Rééquilibrage entre deux paires ce qui implique deux actions: retirer puis déposer.
+* Claim l'intérêt et le réinvestir.
 
-* Rebalancing between two pairs which are 2 actions: withdraw, then deposit.
-* Claim interest & compound
+Veuillez noter que durant les débuts des vaults avec des limites de dépôts très basses, ces actions seront prises en charge par le protcole. Plus tard, une fois que les vaults auront des limites de dépôts plus élevés, ces actions seront financées par une partie de l'intérêt gagné.
 
-Note that in the very early stages of vaults with extremely low deposit limits, these actions are sponsored by the protocol. Later on, once the vaults have much higher deposit limits, these actions will be from a part of the earned interest.
+### Rééquilibrage
 
-### Rebalancing
+Les vaults tentent de rééquilibrer les fonds entre les différentes paires d'emprunt afin d'obtenir le meilleur rendement à long terme.
 
-Vaults try to rebalance funds between individual lending pairs to get the highest long-term overall yield.
+Par exemple, si le total du vault est de 100 ETH, il pourrait contenir des dépôts tel que:
 
-For example, if the total vault balance is 100 ETH, it may hold deposits in:
+* 10 ETH dans la paire ETH-LINK à 51% d'APR
+* 40 ETH dans la paire ETH-MKR à 36% APR
+* 50 ETH dans la paire ETH-COMP à 48% APR
 
-* 10 ETH in ETH-LINK pair at 51% APR
-* 40 ETH in ETH-MKR pair at 36% APR
-* 50 ETH in ETH-COMP pair at 48% APR
+Les vaults sont encore à un stade précoce et le processus de rééquilibrage n'est pas encore totalement automatisé.
 
-Vaults are still in a very early stage and the rebalancing process is currently not yet fully automated.
+Il se peut que les fonds ne soient pas optimisés à 100% afin d'obtenir le meilleur rendement tout le temps. En effet, le coût du gas nécessaire pour rééquilibrer les paires peut être bien plus élevé que le potentiel de courte durée de l'amélioration du rendement global.
 
-The funds may not be at the most optimal highest yielding pair 100% of the time. This is because the gas cost of rebalancing may be much higher than the potential short-lived increase in the supplying interest rate of any given pair.
+Au fur et à mesure que les utilisateurs déposent et empruntent des fonds dans chaque pair, le taux d'intérêt de la paire peut augmenter ou diminuer drastiquement de minute ne minute. Procéder à un rééquilibrage sur de si courtes durées engendrerait des coûts de gas bien trop élevés. Au lieu de cela, le rééquilibrage tente de prédire quelles paires peuvent avoir le meilleur rendement le plus stable à long terme.
 
-As people deposit and borrow funds into each pair, the interest rate on the pair may increase or decrease dramatically from minute to minute. Rebalancing into such short-lived highest yielding pairs every few minutes would generate unreasonable gas costs. Instead, rebalancing tries to predict which pairs may have the best stable yield long-term.
+### Gain du rendement
 
-### Yield earning
+Le rendement des paires de prêt n'est pas versé dans le vault en temps réel. L'intérêt gagné doit être récolté ponctuellement par le rééquilibrage et a un coût en gas. Par conséquence, le rendement cumulé d'une paire donnée doit être supérieure au coût de la récolte.
 
-The yield from individual lending pairs is not funneled into the vault in real time. Earned interest must be harvested from time to time by the rebalancer and costs gas. Therefore, the accumulated yield from a given pair must outweigh the cost of the harvesting.
+### Distribution du rendement
 
-### Yield distribution
+Les dépositants des vaults gagnent un intérêt augmentant à chaque bloc. Une fois le rendement récolté, il est ajouté aux revenus en attente d'être distribués sur une période de 7 jours.
 
-Depositors of the vaults earn an interest accrued by the block. Once the yield is harvested, it's added to the pending undistributed income and distributed evenly over 7 days.
+### Nouveaux dépôts / Zone tampon / Retraits
 
-### New deposits / Buffer area / Withdrawals
+Les nouveaux dépôts effectués dans le vault sont en attente dans la zone tampon et ne rapporte aucun rendement. Une fois qu'il y a assez de liquidités dans la zone tampon, elle est alors déployée dans une paire de prêt.
 
-New deposits made into the vault are waiting in the buffer area and do yet earn any yield. Once there is a large enough balance in the buffer area, it will get deployed to a lending pair.
+La zone tampon sert aussi de moyen à bas coût pour les fournisseurs de liquidité de retirer leurs fonds. Etant donné que les fonds ne sont pas déployés dans une paire de prêt, le vault n'a pas besoin de les retirer et peut les envoyer directement au fournisseur de liquidité.
 
-The buffer area also serves as a cheap way for LPs to withdraw their funds. Since these funds are not yet deployed to any lending pair, the vault doesn't need to withdraw them and can just send them directly to the LP.
+Si le fournisseur de liquidté essaye de retirer un montant supérieur au montant présent dans la zone tampon, le vault doit d'abord retirer les fonds néecessaires avant de les renvoyer au fournisseur de liquidité. Cela a un coût en gas bien plus élevé.
 
-If the LP tries to withdraw an amount larger than what's in the buffer area, the vault will first need to withdraw deployed funds and then send them to the LP. This will have a much higher gas cost.
-
-The buffer area is currently targeting to hold about 10% of the balance deposited into the vault.  Meaning that 90% of the balance will be earning fees and 10% will be idle and available for a cheap withdrawal.
-
+La zone tampon a actuellement un objectif de 10% du montant total déposé dans le vault. Ce qui implique que 90% du montant déposé gagnera des frais, et 10% sera inactif et disponible pour un retrait peu coûteux.
