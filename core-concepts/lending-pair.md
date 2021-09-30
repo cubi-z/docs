@@ -1,8 +1,7 @@
-# Lending Pair
+# Paire de prêt
 
-The lending pair stands at the core of Wild. Anyone can create a new lending pair or provide liquidity for it permissionlessly.
+Les paires de prêt sont au coeur de Wild. N'importe qui peut créer une nouvelle paire de prêt ou fournir de la liquidité pour une paire existante, et ce sans besoin d'autorisation.
 
-A lending pair holds two assets that users can borrow in exchange for providing collateral.
+Une paire de prêt contient deux actifs que les utilisateurs peuvent emprunter à condition de déposer du collatéral.
 
-Each lending pair is completely isolated from the other lending pairs which allows LPs to decide which assets they are comfortable with to accept as collateral.
-
+Chaque paire de prêt est totalement isolée des autres paires, ce qui permet aux fournisseurs de liquidité de décider quels actifs 
