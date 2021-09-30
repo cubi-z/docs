@@ -1,16 +1,15 @@
-# Providing Liquidity
+# Fournir de la liquidité
 
-Liquidity providers \(LPs\) of Wild Credit have single-sided asset exposure and don't suffer from impermanent loss.
+Les fournisseurs de liquidités \(LPs\) de Wild Credit ont une exposition à un seul actif et ne risque donc pas d'impermanent loss.
 
-### Interest rate fees
+### Frais de taux d'intérêt
 
-The interest rate fees are split between LPs and WILD token stakers.
+Les frais de taux d'intérêt est réparti entre les fournisseurs de liquidité et les stakes du token WILD.
 
-#### Single-sided LP tokens
+#### Tokens LP uniques
 
-To allow better composability, Wild introduces single-sided LP tokens. Instead of giving you a single combined LP token, each lending pair has two LP tokens, representing a claim over their respective underlying assets. These are standard ERC20 tokens that can be used, transferred, or sold anywhere else.
+Afin de permettre une meilleure composabilité, Wild a mis en place des LP tokens représentant un seul actif. AU lieu de vous donner un LP token représentant la combinaison de la pool, chaque paire prêteuse a deux tokens, représentant leur actif sous-jacent respectif. Ce sont des tokens ERC20 qui peuvent être utilisés, transférés ou vendus n'importe où.
 
-For example, if you deposit 10 DAI in DAI-ETH pair, you’ll get 10 **DAI** LP tokens ****in ****DAI-ETH pair. If you deposit another 5 DAI in DAI-YFI pair and you’ll get 5 **DAI** LP tokens ****in ****DAI-YFI pair. Both LP tokens are unique and can only be used in their respective pairs.
+Par exemple, si vous déposez 10 DAI dans la paire DAI-ETH, vous obtiendrez 10 **DAI** tokens LP dans la paire DAI-ETH. Si vous déposez 5 autres DAI dans la paire DAI-YFI, vous obtiendrez 5 **DAI** tokens LP dans la paire DAI-YFI. Ces deux tokens LP sont unique et ne peuvent être utilisés que dans leur paire respective.
 
-Fees are distributed to the LPs each time they interact with the protocol \(transfer LP tokens, deposit, withdraw\) by increasing the balance of their LP tokens.
-
+Les frais sont distribués aux fournisseurs de liquidité à chaque fois qu'ils intéragissent avec le protocole \(transfert des tokens LP, dépôt, retrait\) en augmantant le solde de leur tokens LP.
