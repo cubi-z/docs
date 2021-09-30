@@ -1,12 +1,12 @@
-# Market Participants
+# Acteurs du marché
 
-Wild Credit has 2 main market participants.
+Wild Credit compte deux acteurs principaux de marché.
 
-**Lenders**
 
-Lenders supply assets into any of the isolated lending pairs to earn interest.
+**Les prêteurs**
 
-**Borrowers**
+Les prêteurs déposent des actifs dans n'importe quelle paire de prêt isolée afin de gagner de l'intérêt.
 
-Borrowers deposit one asset as collateral and borrow another asset. Borrowers may get liquidated if their collateral ratio becomes insufficient.
+**Les emprunteurs**
 
+Les emprunteurs déposent un actif en collatéral et emprunte un autre actif. Les emprunteurs peuvent être liquidés si leur ratio de collatéralisation devient insuffisant.
