@@ -1,20 +1,20 @@
-# Controller
+# Contrôleur
 
-## Address
+## Adresse
 
-to-be-added
+en attente d'ajout
 
-## Functions
+## Fonctions
 
 ### LIQ\_MIN\_HEALTH
 
-Minimum health ratio. Liquidations may happen if an account is below this ratio. 1e18 = 1%
+Ratio de santé minimum. Les liquidations peuvent arriver si une position est en dessous de ce ratio. 1e18 = 1%
 
 ### liqFeeSystemDefault
 
-A default percentage of the liquidation penalty earned by the protocol. 1e18 = 1%
+Un pourcentage par défaut de la pénalité de liquidation gagnée par le protocole. 1e18 = 1%
 
 ### liqFeeCallerDefault
 
-A default percentage of the liquidation penalty earned by the caller. 1e18 = 1%
+Un pourcentage par défaut de la pénalité de liquidation gagnée par l'appelant. 1e18 = 1%
 
