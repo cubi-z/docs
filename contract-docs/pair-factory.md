@@ -1,14 +1,14 @@
-# Pair Factory
+# Fabrication de paires
 
-## Address
+## Adresse
 
-to-be-added
+en attente d'ajout
 
-## Events
+## Evènements
 
 ### PairCreated
 
-Emitted on each `createPair` function call.
+Emis à chaque appel de la fonction `createPair`.
 
 ```text
 event PairCreated(
@@ -18,11 +18,11 @@ event PairCreated(
 )
 ```
 
-## Functions
+## Fonctions
 
 ### createPair
 
-Creates & initializes a new lending pair without adding any liquidity to it.
+Creer & initialise une nouvelle paire de prêt sans y ajouter de liquidité.
 
 ```text
 createPair(
