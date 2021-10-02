@@ -1,10 +1,10 @@
-# Lending Pair
+# Paires de prêt
 
-## Events
+## Evènements
 
 ### Liquidation
 
-Emitted on each `liquidateAccount` function call.
+Emis à chaque appel de la fonction `liquidateAccount`.
 
 ```text
 event Liquidation(
@@ -16,43 +16,43 @@ event Liquidation(
 )
 ```
 
-### Deposit
+### Dépôt
 
-Emitted on any of the `deposit` function calls.
+Emis sur n'importe quel appel de la fonction `deposit`.
 
 ```text
 event Deposit(address indexed account, address indexed token, uint amount)
 ```
 
-### Withdraw
+### Retrait
 
-Emitted on any of the `withdraw` function calls.
+Emis sur n'importe quel appel de la fonction `withdraw`.
 
 ```text
 event Withdraw(address indexed token, uint amount)
 ```
 
-### Borrow
+### Emprunt
 
-Emitted on each `borrow` function call.
+Emis sur chaque appel de la fonction `borrow`.
 
 ```text
 event Borrow(address indexed token, uint amount)
 ```
 
-### Repay
+### Remboursement
 
-Emitted on each `repay` function call.
+Emis sur chaque appel de la fonction `repay`.
 
 ```text
 event Repay(address indexed account, address indexed token, uint amount)
 ```
 
-## Read-only functions
+## Fonctions en lecture seule
 
 ### debtOf
 
-Borrowed token amount with interest for a given account. May not include currently pending interest.
+Montant du token emprunté intérêt compris pour une position. Peut ne pas inclure les intérêts en attente.
 
 ```text
 debtOf(address token, address account)
@@ -60,7 +60,7 @@ debtOf(address token, address account)
 
 ### totalDebt
 
-Total debt with interest for a given token. May not include currently pending interest.
+Dette totale intérêt compris pour un token donné. Peut ne pas inclure les intérêts en attente.
 
 ```text
 totalDebt(address token)
@@ -68,7 +68,8 @@ totalDebt(address token)
 
 ### borrowBalance
 
-Borrowed `borrowToken` amount with interest for a given `account`, converted into `returnToken` token based on the liquidation current [liquidation price](). Does not include slippage. May not include pending interest.
+Montant emprunté `borrowToken` intérêts compris pour une `position` donnée, convertie en token `returnToken` sur la base du [prix de liquidation]() actuel. N'inclut pas le slippage. Peut ne pas inclure les intérêts en attente.
+
 
 ```text
 borrowBalance(address account, address borrowToken, address returnToken)
@@ -76,7 +77,7 @@ borrowBalance(address account, address borrowToken, address returnToken)
 
 ### supplyBalance
 
-Borrowed `suppliedToken` amount with interest for a given `account`, converted into `returnToken` token based on the current [liquidation price](). Does not include slippage. May not include pending interest.
+Montant emprunté `suppliedToken` intérêts compris pour une `position` donnée, convertie en token `returnToken` sur la base du [prix de liquidation]() actuel. N'inclut pas le slippage. Peut ne pas inclure les intérêts en attente.
 
 ```text
 supplyBalance(address account, address borrowToken, address returnToken)
@@ -84,7 +85,8 @@ supplyBalance(address account, address borrowToken, address returnToken)
 
 ### accountHealth
 
-Calculated as combined `supplyBalance` / `borrowBalance`of both tokens. When below `controller.liqMinHealth()`, the account may be liquidated.
+Correspond au ratio `supplyBalance` / `borrowBalance` des deux tokens. Quand celui ci passe en dessous de `controller.liqMinHealth()`, la position peut être liquidée.
+
 
 ```text
 accountHealth(address account)
@@ -92,7 +94,7 @@ accountHealth(address account)
 
 ### convertTokenValues
 
-Convert`fromToken` amount into `toToken` amount based on the oracle prices.
+Convertit le montant `fromToken` en montant `toToken` basé sur les prix de l'oracle.
 
 ```text
 convertTokenValues(address fromToken, address toToken, uint inputAmount)
@@ -100,7 +102,7 @@ convertTokenValues(address fromToken, address toToken, uint inputAmount)
 
 ### pendingSupplyInterest
 
-Pending interest amount not yet included in `supplyBalance`.
+Montant des intérêts en attente pas encore inclus dans `supplyBalance`.
 
 ```text
 pendingSupplyInterest(address token, address account)
@@ -108,17 +110,18 @@ pendingSupplyInterest(address token, address account)
 
 ### pendingBorrowInterest
 
-Pending interest amount not yet included in `borrowBalance`.
+Montant des intérêts en attente pas encore inclus dans `borrowBalance`.
+
 
 ```text
 pendingBorrowInterest(address token, address account)
 ```
 
-## State-modifying functions
+## Fonctions de modification de l'état
 
 ### deposit
 
-Deposit `token` to earn interest or to provide collateral for borrowing another token.
+Déposer un `token` afin de gagner de l'intérêt ou de fournir un collatéral afin d'emprunter un autre token.
 
 ```text
 deposit(address account, address token, uint amount)
@@ -126,7 +129,7 @@ deposit(address account, address token, uint amount)
 
 ### withdraw
 
-Withdraw deposited token. If there is a positive `borrowBalance`, the account must stay above required  `accountHealth` after calling this function.
+Retirer le token déposé. Si il y a une `borrowBalance` positive, la position doit rester au dessus du `accountHealth` requis après l'appel de cette fonction.
 
 ```text
 withdraw(address token, uint amount)
@@ -134,7 +137,7 @@ withdraw(address token, uint amount)
 
 ### withdrawAll
 
-Withdraw the full supply balance + pending interest.
+Retire le solde total + les intérêts en attente.
 
 ```text
 withdrawAll(address token)
@@ -142,7 +145,7 @@ withdrawAll(address token)
 
 ### repayAll
 
-Repay the full borrow balance + pending interest.
+Rembourse l'intégralité de la dette + les intérêts en attente.
 
 ```text
 repayAll(address account, address token)
@@ -150,7 +153,7 @@ repayAll(address account, address token)
 
 ### borrow
 
-Borrow `token`. The account must stay above required  `accountHealth` after calling this function. The account cannot borrow the same token it's currently supplying.
+Emprunte un `token`. La position doit rester au dessus du `accountHealth` requis après l'appel de cette fonction. Il est impossible d'emprunter le même token que celui qui est déposé.
 
 ```text
 borrow(address token, uint amount)
@@ -158,7 +161,7 @@ borrow(address token, uint amount)
 
 ### repay
 
-Repay borrowed `token`.
+Rembourse l'emprunt du `token`.
 
 ```text
 repay(address account, address token, uint amount)
@@ -166,7 +169,7 @@ repay(address account, address token, uint amount)
 
 ### depositRepay
 
-For a given `token`, the `deposit` function can only be called after repaying the debt first. This helper function combines both actions into one by repaying the debt first and using the remaining amount as a deposit.
+Pour un `token` donné, la fonction `deposit` peut seulement être appelée après avoir rembourser la dette. Cette fonction d'aide combine les deux actions en une, en remboursant d'abord la dette avant d'utiliser le montant restant comme dépôt.
 
 ```text
 depositRepay(address account, address token, uint amount)
@@ -174,7 +177,7 @@ depositRepay(address account, address token, uint amount)
 
 ### depositRepayETH
 
-Same as `depositRepay` but using ETH as input.
+Même fonction que `depositRepay` mais en utilisant de l'ETH comme entrée.
 
 ```text
 depositRepayETH(address account) payable
@@ -182,7 +185,7 @@ depositRepayETH(address account) payable
 
 ### withdrawBorrow
 
-For a given `token`, the `borrow` function can only be called after withdrawing the supplied amount first. This helper function combines both actions into one by withdrawing the supplied amount first and using the remaining amount to borrow.
+Pour un `token` donné, la fonction `borrow` peut seulement être appelée après avoir retirer le montant déposé. Cette fonction d'aide combine les deux actions en une, en retirant d'abord le montant déposé et en utilisant le montant restant pour emprunter.
 
 ```text
 withdrawBorrow(address token, uint amount)
@@ -190,7 +193,7 @@ withdrawBorrow(address token, uint amount)
 
 ### withdrawBorrowETH
 
-Same as `withdrawBorrow` but using ETH as output.
+Même fonction que `withdrawBorrow` mais en utilisant de l'ETH comme entrée.
 
 ```text
 withdrawBorrowETH(uint amount)
