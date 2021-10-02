@@ -1,14 +1,15 @@
-# Price Oracles
+# Oracles de prix
 
-Wild Credit uses a combination of Chainlink oracles for large blue-chip tokens and Uniswap V3 oracle for mid and small cap tokens.
+Wild Credit utilise une combinaison d'oracles Chainlink pour les tokens blue-chip et d'oracle Uniswap V3 pour les tokens à faible et moyenne capitalisation.
 
-If the oracle stops reporting the price for any reason, the following actions will be auto-disabled: deposit, borrow, liquidate.
+En cas d'interruption de communication du prix par l'oracle pour une quelconque raison, les actions suivantes seront désactivées: déposer, emprunter, liquider.
 
-The actions which don't require token prices will remain enabled: repay, withdraw.
+Les actions qui ne requiert pas le prix des tokens resteront activées: rembourser, retirer.
 
-Be aware that providing liquidity on a pair with a low-cap token is highly risky. If the cost of market buying a small-cap token to increase its price for a period of time \(e.g. 10 minutes\) is lower than the potential reward of borrowing against, it's possible that someone may do exactly that.
+Soyez conscient que fournir de la liquidité sur une paire contenant un token à faible capitalisation est hautement risqué. Si le coût d'achat au marché d'un token à faible capitalisation afin d'augmenter son prix pour une période donnée \(ex 10 minutes\) est inférieur à la récompense potentielle de l'utiliser en collatéral afin d'emprunter, il est possible qu'une personne fasse exactement ça.
 
-On the opposite side, if the token price drops significantly for a TWAP period of time, this could result in a lot of liquidations.
+A l'inverse, si le prix d'un token baisse significativement sur une période TWAP, cela pourrait engendrer de nombreuses liquidations.
 
-Note that this kind of price manipulation is not a technical issue. The price reported by the oracle would in this case be correct. It's also not a flash loan attack which all happens in the same transaction and is not possible here. The borrower would need to maintain the price of the target token for a certain period of time in order to execute this scenario.
+Veuillez noter que ce genre de manipulation du prix n'est pas un problème technique. Le prix donné par l'oracle serait, dans ces cas là, correct. Ce n'est pas non plus une attaque flash loan qui se produit dans une seule et même transaction, ce qui n'est pas possible ici.  L'emprunteur devrait en effet maintenir le prix du token ciblé pour une certaine période de temps afin d'éxécuter l'ensemble du scénario.
+
 
