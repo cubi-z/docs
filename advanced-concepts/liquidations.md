@@ -1,14 +1,15 @@
 # Liquidations
 
-To understand how the price oracles work, see [Price Oracles](price-oracles.md).
+Afin de comprendre comment les oracles de prix fonctionnent, voir [Price Oracles](price-oracles.md).
 
-For each lending pair, Wild Credit allows you to deposit one token and borrow the other. Your safety ratio must stay above 1.0, else your account may be liquidated.
+Pour chaque paire de prêt, Wild Credit vous permet de déposer un token et d'emprunter l'autre. Votre ratio de sécurité doit rester au dessus de 1.0, autrement votre position peut se faire liquider.
 
-Each lending pair is isolated. Meaning your balances, safety ratio and liquidations for one pair will not affect your ratio or balances in other lending pairs.
+Chaque paire de prêt est isolé. Ce qui signifique que vos soldes, ratio de sécurité et liquidations pour une paire n'affectera pas votre ratio ou soldes dans d'autres paires.
 
-When an account is liquidated, your collateral is sold based on the current oracle price to repay all your debt.
+Quand une position est liquidité, le collatéral est vendu au prix indiqué par l'oracle afin de rembourser la dette.
 
-The liquidation penalty is a sum of [controller.liqFeeSystem](../contract-docs/controller.md#liqfeesystem) and [controller.liqFeeCaller](../contract-docs/controller.md#liqfeecaller) values.
+La pénalité de liquidation est une somme de [controller.liqFeeSystem](../contract-docs/controller.md#liqfeesystem) et de [controller.liqFeeCaller](../contract-docs/controller.md#liqfeecaller).
 
-At the time of writing, the total liquidation fee is 10%.
+Au moment de la rédaction de ce document, la pénalité de liquidation s'élève à 10%.
+
 
