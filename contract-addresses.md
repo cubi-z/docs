@@ -1,4 +1,4 @@
-# Contract Addresses
+# Adresses des contrats
 
 ### WILD
 
