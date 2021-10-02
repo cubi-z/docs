@@ -6,7 +6,7 @@ Les prêteurs déposent des actifs dans une des paires de prêt afin de gagner d
 
 Pour une vue d'ensemble plus détaillée, voir le [post d'annonce](https://medium.com/wild-credit/announcing-wild-credit-borrow-or-lend-any-token-8af2a7d69206).
 
-#### Adresses des contrats:
+## Adresses des contrats:
 
 Token WILD: [0x08a75dbc7167714ceac1a8e43a8d643a4edd625a](https://etherscan.io/address/0x08a75dbc7167714ceac1a8e43a8d643a4edd625a)
 

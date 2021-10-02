@@ -68,8 +68,7 @@ totalDebt(address token)
 
 ### borrowBalance
 
-Montant emprunté `borrowToken` intérêts compris pour une `position` donnée, convertie en token `returnToken` sur la base du [prix de liquidation]() actuel. N'inclut pas le slippage. Peut ne pas inclure les intérêts en attente.
-
+Montant emprunté `borrowToken` intérêts compris pour une `position` donnée, convertie en token `returnToken` sur la base du [prix de liquidation](lending-pair.md) actuel. N'inclut pas le slippage. Peut ne pas inclure les intérêts en attente.
 
 ```text
 borrowBalance(address account, address borrowToken, address returnToken)
@@ -77,7 +76,7 @@ borrowBalance(address account, address borrowToken, address returnToken)
 
 ### supplyBalance
 
-Montant emprunté `suppliedToken` intérêts compris pour une `position` donnée, convertie en token `returnToken` sur la base du [prix de liquidation]() actuel. N'inclut pas le slippage. Peut ne pas inclure les intérêts en attente.
+Montant emprunté `suppliedToken` intérêts compris pour une `position` donnée, convertie en token `returnToken` sur la base du [prix de liquidation](lending-pair.md) actuel. N'inclut pas le slippage. Peut ne pas inclure les intérêts en attente.
 
 ```text
 supplyBalance(address account, address borrowToken, address returnToken)
@@ -86,7 +85,6 @@ supplyBalance(address account, address borrowToken, address returnToken)
 ### accountHealth
 
 Correspond au ratio `supplyBalance` / `borrowBalance` des deux tokens. Quand celui ci passe en dessous de `controller.liqMinHealth()`, la position peut être liquidée.
-
 
 ```text
 accountHealth(address account)
@@ -111,7 +109,6 @@ pendingSupplyInterest(address token, address account)
 ### pendingBorrowInterest
 
 Montant des intérêts en attente pas encore inclus dans `borrowBalance`.
-
 
 ```text
 pendingBorrowInterest(address token, address account)

@@ -12,4 +12,3 @@ La pénalité de liquidation est une somme de [controller.liqFeeSystem](../contr
 
 Au moment de la rédaction de ce document, la pénalité de liquidation s'élève à 10%.
 
-

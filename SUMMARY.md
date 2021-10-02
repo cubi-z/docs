@@ -2,41 +2,39 @@
 
 * [Introduction](README.md)
 
-## Wild Tokenomics
+## Tokenomics du WILD <a id="wild-tokenomics"></a>
 
----
+* [Token WILD](wild-tokenomics/wild-token.md)
+* [Staking xWILD](wild-tokenomics/xwild-staking.md)
 
-* [WILD token](wild-token.md)
-* [xWILD Staking](xwild-staking.md)
+## Prêt <a id="lending"></a>
 
-## Lending
-
-* [Interest Rates](lending/interest-rates.md)
-* [Safety Ratio](lending/safety-ratio.md)
+* [Taux d'intérêt](lending/interest-rates.md)
+* [Ratio de sécurité](lending/safety-ratio.md)
 
 ## Vaults
 
-* [Overview](vaults/vaults-1.md)
-* [Projected APR](vaults/current-vs-projected-apr.md)
+* [Vue d'ensemble](vaults/vaults-1.md)
+* [APR projeté](vaults/current-vs-projected-apr.md)
 
-## Core Concepts
+## Concepts de base <a id="core-concepts"></a>
 
-* [Lending Pair](core-concepts/lending-pair.md)
-* [Market Participants](core-concepts/market-participants.md)
-* [Providing Liquidity](core-concepts/providing-liquidity.md)
+* [Paires de prêt](core-concepts/lending-pair.md)
+* [Acteurs du marché](core-concepts/market-participants.md)
+* [Fournir de la liquidité](core-concepts/providing-liquidity.md)
 
-## Advanced Concepts
+## Concepts avancés <a id="advanced-concepts"></a>
 
-* [Price Oracles](advanced-concepts/price-oracles.md)
+* [Oracles de prix](advanced-concepts/price-oracles.md)
 * [Liquidations](advanced-concepts/liquidations.md)
 
 ## Contract Docs
 
-* [Lending Pair](contract-docs/lending-pair.md)
-* [Pair Factory](contract-docs/pair-factory.md)
-* [Controller](contract-docs/controller.md)
+* [Paires de prêt](contract-docs/lending-pair.md)
+* [Fabrication de paires](contract-docs/pair-factory.md)
+* [Contrôleur](contract-docs/controller.md)
 
 ---
 
-* [Contract Addresses](contract-addresses.md)
+* [Adresses des contrats](contract-addresses.md)
 
