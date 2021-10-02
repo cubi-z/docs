@@ -1,14 +1,14 @@
 # Introduction
 
-Wild is a permissionless lending protocol featuring isolated lending pairs.
+Wild est un protocole de prêt sans permission présentant des paires de prêt isolées.
 
-Lenders supply assets into any of the lending pairs to earn interest. Borrowers pay interest to borrow while collateralizing their loans. The protocol earns an interest rate spread.
+Les prêteurs déposent des actifs dans une des paires de prêt afin de gagner de l'intérêt. Les emprunteurs paient un intérêt afin d'emprunter contre un collatéral. Le protocole gagne l'écart entre les taux d'intérêts.
 
-For a high-level overview, see the [announcement post](https://medium.com/wild-credit/announcing-wild-credit-borrow-or-lend-any-token-8af2a7d69206).
+Pour une vue d'ensemble plus détaillée, voir le [post d'annonce](https://medium.com/wild-credit/announcing-wild-credit-borrow-or-lend-any-token-8af2a7d69206).
 
-#### Contract addresses
+#### Adresses des contrats:
 
-WILD token: [0x08a75dbc7167714ceac1a8e43a8d643a4edd625a](https://etherscan.io/address/0x08a75dbc7167714ceac1a8e43a8d643a4edd625a)
+Token WILD: [0x08a75dbc7167714ceac1a8e43a8d643a4edd625a](https://etherscan.io/address/0x08a75dbc7167714ceac1a8e43a8d643a4edd625a)
 
 Controller: [0x45ee906e9cfae0aabdb194d6180a3a119d4376c4](https://etherscan.io/address/0x45ee906e9cfae0aabdb194d6180a3a119d4376c4)
 
