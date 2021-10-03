@@ -1,6 +1,6 @@
 # Introduction
 
-Wild est un protocole de prêt sans permission présentant des paires de prêt isolées.
+Wild est un protocole de prêt sans permission fonctionnant avec des paires de prêt isolées.
 
 Les prêteurs déposent des actifs dans une des paires de prêt afin de gagner de l'intérêt. Les emprunteurs paient un intérêt afin d'emprunter contre un collatéral. Le protocole gagne l'écart entre les taux d'intérêts.
 
