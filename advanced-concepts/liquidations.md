@@ -1,6 +1,6 @@
 # Liquidations
 
-Afin de comprendre comment les oracles de prix fonctionnent, voir [Price Oracles](price-oracles.md).
+Afin de comprendre comment les oracles de prix fonctionnent, voir [Oracles de prix](price-oracles.md).
 
 Pour chaque paire de prêt, Wild Credit vous permet de déposer un token et d'emprunter l'autre. Votre ratio de sécurité doit rester au dessus de 1.0, autrement votre position peut se faire liquider.
 
