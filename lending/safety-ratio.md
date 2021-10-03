@@ -1,6 +1,6 @@
 # Ratio de sécurité
 
-Afin de maintenir la solvabilité du protocole, les emprunteurs doivent sur-collatéralisér leurs positions d'emprunt.
+Afin de maintenir la solvabilité du protocole, les emprunteurs doivent sur-collatéraliser leurs positions d'emprunt.
 
 Un ratio de sécurité est calculé en USD:
 
