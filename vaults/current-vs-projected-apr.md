@@ -1,6 +1,6 @@
 # APR projeté
 
-Afin de comprendre la différence entre le rendement distribué et le rendement en attente, consultez la section [yield earning](vaults-1.md#yield-earning)
+Afin de comprendre la différence entre le rendement distribué et le rendement en attente, consultez la section [yield earning](vaults-1.md#gain-du-rendement)
 
 ## APR distribué
 
