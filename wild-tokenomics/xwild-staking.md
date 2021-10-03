@@ -8,7 +8,7 @@ Les frais générés par le protocole à travers l'écart des taux d'intérêts 
 
 ### 1. Fournir de la liquidité & emprunter - la génération des frais
 
-Les fournisseurs de liquidité ajoutent un token natif à chaque paire de prêt. Les emprunteurs paient un intérêt qui est partiellement gagnée par les fournisseurs de liquidité, et partiellement par le protocole. Cet intérêt, cependant, n'est pas distribué en temps réel et doit être accumulé pour chaque fournisseur séparemment.
+Les fournisseurs de liquidité ajoutent un token natif à chaque paire de prêt. Les emprunteurs paient un intérêt qui est partiellement gagnée par les fournisseurs de liquidité, et partiellement par le protocole. Cet intérêt, cependant, n'est pas distribué en temps réel et doit être accumulé pour chaque fournisseur séparement.
 
 ### 2. Accumuler - la collecte des frais
 
