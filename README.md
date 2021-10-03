@@ -2,7 +2,7 @@
 
 Wild est un protocole de prêt sans permission fonctionnant avec des paires de prêt isolées.
 
-Les prêteurs déposent des actifs dans une des paires de prêt afin de gagner de l'intérêt. Les emprunteurs paient un intérêt afin d'emprunter contre un collatéral. Le protocole gagne l'écart entre les taux d'intérêts.
+Les prêteurs déposent des actifs dans une des paires de prêt afin de gagner des intérêts. Les emprunteurs paient eux des intérêts afin d'emprunter contre un collatéral. Le protocole gagne l'écart entre les taux d'intérêts.
 
 Pour une vue d'ensemble plus détaillée, voir le [post d'annonce](https://medium.com/wild-credit/announcing-wild-credit-borrow-or-lend-any-token-8af2a7d69206).
 
