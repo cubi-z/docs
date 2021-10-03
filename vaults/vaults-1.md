@@ -27,7 +27,7 @@ Par exemple, si le total du vault est de 100 ETH, il pourrait contenir des dép�
 
 Les vaults sont encore à un stade précoce et le processus de rééquilibrage n'est pas encore totalement automatisé.
 
-Il se peut que les fonds ne soient pas optimisés à 100% afin d'obtenir le meilleur rendement tout le temps. En effet, le coût du gas nécessaire pour rééquilibrer les paires peut être bien plus élevé que le potentiel de courte durée de l'amélioration du rendement global.
+Il se peut que les fonds ne soient pas optimisés à 100% afin d'obtenir le meilleur rendement tout le temps. En effet, le coût en gas nécessaire pour rééquilibrer les paires peut être bien plus élevé que le potentiel de courte durée de l'amélioration du rendement global.
 
 Au fur et à mesure que les utilisateurs déposent et empruntent des fonds dans chaque pair, le taux d'intérêt de la paire peut augmenter ou diminuer drastiquement de minute en minute. Procéder à un rééquilibrage sur de si courtes durées engendrerait des coûts de gas bien trop élevés. Au lieu de cela, le rééquilibrage tente de prédire quelles paires peuvent avoir le meilleur rendement le plus stable à long terme.
 
