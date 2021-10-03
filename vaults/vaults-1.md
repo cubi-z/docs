@@ -13,11 +13,11 @@ Deuxièmement, le coût des actions suivantes est partagé par tous les fourniss
 * Rééquilibrage entre deux paires ce qui implique deux actions: retirer puis déposer.
 * Claim l'intérêt et le réinvestir.
 
-Veuillez noter que durant les débuts des vaults avec des limites de dépôts très basses, ces actions seront prises en charge par le protcole. Plus tard, une fois que les vaults auront des limites de dépôts plus élevés, ces actions seront financées par une partie de l'intérêt gagné.
+Veuillez noter que durant les débuts des vaults avec des limites de dépôts très basses, ces actions seront prises en charge par le protocole. Plus tard, une fois que les vaults auront des limites de dépôts plus élevés, ces actions seront financées par une partie de l'intérêt gagné.
 
 ## Rééquilibrage
 
-Les vaults tentent de rééquilibrer les fonds entre les différentes paires d'emprunt afin d'obtenir le meilleur rendement à long terme.
+Les vaults tentent de rééquilibrer les fonds entre les différentes paires de prêt afin d'obtenir le meilleur rendement à long terme.
 
 Par exemple, si le total du vault est de 100 ETH, il pourrait contenir des dépôts tel que:
 
@@ -29,7 +29,7 @@ Les vaults sont encore à un stade précoce et le processus de rééquilibrage n
 
 Il se peut que les fonds ne soient pas optimisés à 100% afin d'obtenir le meilleur rendement tout le temps. En effet, le coût du gas nécessaire pour rééquilibrer les paires peut être bien plus élevé que le potentiel de courte durée de l'amélioration du rendement global.
 
-Au fur et à mesure que les utilisateurs déposent et empruntent des fonds dans chaque pair, le taux d'intérêt de la paire peut augmenter ou diminuer drastiquement de minute ne minute. Procéder à un rééquilibrage sur de si courtes durées engendrerait des coûts de gas bien trop élevés. Au lieu de cela, le rééquilibrage tente de prédire quelles paires peuvent avoir le meilleur rendement le plus stable à long terme.
+Au fur et à mesure que les utilisateurs déposent et empruntent des fonds dans chaque pair, le taux d'intérêt de la paire peut augmenter ou diminuer drastiquement de minute en minute. Procéder à un rééquilibrage sur de si courtes durées engendrerait des coûts de gas bien trop élevés. Au lieu de cela, le rééquilibrage tente de prédire quelles paires peuvent avoir le meilleur rendement le plus stable à long terme.
 
 ## Gain du rendement
 
