@@ -9,5 +9,5 @@ L'adresse du WILD est la suivante: [0x08A75dbC7167714CeaC1a8e43a8d643A4EDd625a](
 * 44.9631% de la supply est destinée à un programme d'incentivisation sur une durée d'un an. 
 * 0.069% de la supply a été airdrop aux premiers testeurs du protocole.
 
-Wild Credit gagne les frais du protocole via l'écart entre les taux d'intérêts prêt/emprunt. Les emprunteurs paient un taux d'emprunt qui est partiellement gagnée par les fournisseurs de liquidité, et partiellement par les stakers de WILD.
+Wild Credit gagne les frais du protocole via l'écart entre les taux d'intérêts prêt/emprunt. Les emprunteurs paient un taux d'emprunt qui est partiellement gagné par les fournisseurs de liquidité, et partiellement par les stakers de WILD.
 
